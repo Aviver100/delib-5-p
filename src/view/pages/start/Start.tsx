@@ -14,12 +14,11 @@ import { useAppSelector } from "../../../controllers/hooks/reduxHooks";
 import { userSelector } from "../../../model/users/userSlice";
 
 // icons
-// import Logo from "../../../assets/logo/106 x 89 SVG.svg";
 import Logo from "../../../assets/logo/106 x 89 SVG.svg?react";
 import MoreRight from "../../../assets/icons/moreRight.svg?react";
 import MoreLeft from "../../../assets/icons/moreLeft.svg?react";
 import StratPageImage from '../assets/StratPageImage.png'
-import StratPageImageMobile from '../assets/StratPageImageMobile.png'
+// import StratPageImageMobile from '../assets/StratPageImageMobile.png'
 
 // Constants
 import { LANGUAGES } from "../../../constants/Languages";
@@ -60,16 +59,14 @@ const Start = () => {
 	return (
 		<div className={styles.splashPage}>
 			<div className={styles.mainlogo}>
-				<Logo />
+				<Logo className={styles.mainlogo__Logo} />
 				<div className={styles.mainlogo__title}>
 					<span className={styles.mainlogo__Free}>Free</span>
 					<span className={styles.mainlogo__Di}>Di</span>
 				</div>
-				{/* <div className={styles.slogan}> */}
 				<span className={styles.mainlogo__slogan}>
 					{t("Fostering Collaborations")}
 				</span>
-				{/* </div> */}
 			</div>
 			<select
 				className={styles.language}
@@ -106,7 +103,7 @@ const Start = () => {
 			<GoogleLoginButton />
 
 			<img src={StratPageImage} alt="" className={styles.StratPageImage} />
-			<img src={StratPageImageMobile} alt="" className={styles.StratPageImageMobile} />
+			{/* <img src={StratPageImageMobile} alt="" className={styles.StratPageImageMobile} /> */}
 			<a href="http://delib.org" target="_blank">
 				<footer className={styles.ddi}>
 					{t("From the Institute for Deliberative Democracy")}

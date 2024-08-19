@@ -33,8 +33,8 @@
 @media only screen and (max-width: 600px) {
     .googleLogin {
         position: absolute;
-        margin-top: 25rem;
-        width: 18rem;
+        margin-top: 27rem;
+        width: 17rem;
     }
     .googleLogin.ltr {
         border-radius: 3rem 0rem 0rem 3rem;
@@ -45,5 +45,12 @@
         left: 0;
         margin-left: 0rem;
 
+    }
+}
+
+@media only screen and (max-height: 700px) {
+    .googleLogin {
+        position: absolute;
+        margin-top: 23rem ;
     }
 }
